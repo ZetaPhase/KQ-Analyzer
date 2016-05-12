@@ -16,6 +16,8 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 - Shiny
 - jsonlite
 
+Please visit the setup.txt file for more reference.
+
 (c) 2016, Zetaphase Technologies Inc, All Rights Reserved.
 Licensed under the GPLv3
 
