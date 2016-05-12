@@ -5,5 +5,16 @@ Retrieves data from the JSON API provided our [KQ Analytics project](https://git
 
 The analyzer uses R to plot and analyze data and uses Shiny to create the desktop application.
 
+### Quick Start For Developers
+
+#### First download: 
+- R
+- R Studio(Optional)
+
+#### Required Libraries:
+- Curl
+- Shiny
+- jsonlite
+
 (c) 2016, Zetaphase Technologies Inc, All Rights Reserved.
 Licensed under the GPLv3
