@@ -18,3 +18,6 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 (c) 2016, Zetaphase Technologies Inc, All Rights Reserved.
 Licensed under the GPLv3
+
+
+- Created by Dave Ho and Nihal Talur
