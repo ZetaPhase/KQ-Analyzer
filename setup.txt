@@ -1,0 +1,18 @@
+KQ Analyzer Setup
+
+For developers who want to contribute to Zetaphase KQ Analyzer
+
+Download R 3.3.0 (May be Deprecated)
+https://cran.r-project.org/bin/windows/base/
+
+Download R Studio (IDE/Platform for R)
+https://www.rstudio.com/products/rstudio/download/
+
+Shiny Documentation
+http://shiny.rstudio.com/
+
+1. After downloading both R and R Studio, launch R Studio.
+2. Click on the Packages tab on the lower right tile
+3. Download the Shiny package
+4. Download the Curl package
+5. You're all set
