@@ -6,4 +6,6 @@ document <- fromJSON(txt=url)
 data <- document[["rawData"]]
 idData <- table(data[["id"]])
 urlData <- table(data[["url"]])
+timestampData <- table(data[["timestamp"]])
+b64Data <- table(data[["b64extradata"]])
 barplot(idData)
