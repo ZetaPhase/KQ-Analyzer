@@ -7,7 +7,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 ### Quick Start For Developers
 
-#### First download: 
+#### Initial download: 
 - R
 - R Studio(Optional)
 
