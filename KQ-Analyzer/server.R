@@ -8,10 +8,14 @@
 #
 
 library(shiny)
+library(jsonlite)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-   
+  
+  output$idPlot <- renderPlot({
+    
+  })
   output$distPlot <- renderPlot({
     
     # generate bins based on input$bins from ui.R
