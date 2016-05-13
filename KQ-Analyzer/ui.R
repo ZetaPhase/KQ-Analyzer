@@ -11,11 +11,17 @@ library(shiny)
 
 # Define UI for application that draws a histogram
 shinyUI(
-  navbarPage("KQ-Analyzer",
+  navbarPage("KQ Analyzer",
              tabPanel(
-               "Component 1",
+               "ID Data",
                sidebarLayout(
                  sidebarPanel(
+                   textInput(
+                     inputId = "url",
+                     value = "",
+                     width = "400px",
+                     placeholder = "Insert a URL to Track"
+                   ),
                    selectizeInput(
                      'id', label="Year", choices=NULL, multiple=F, selected="X2015",
                      options = list(create = TRUE,placeholder = 'Choose the year')
