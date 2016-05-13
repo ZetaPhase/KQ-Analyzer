@@ -11,7 +11,7 @@ library(shiny)
 
 # Define UI for application that draws a histogram
 shinyUI(
-  navbarPage("My Application",
+  navbarPage("KQ-Analyzer",
              tabPanel(
                "Component 1",
                sidebarLayout(
