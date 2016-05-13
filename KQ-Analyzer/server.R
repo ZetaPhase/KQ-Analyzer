@@ -23,7 +23,9 @@ shinyServer(function(input, output) {
     idData <- table(data[["id"]])
     
     # plot barchart based on idData
-    barplot(idData)
+    op <- par(mar = c(10,4,4,2) + 0.1)
+    barplot(idData, las=2)
+    par(op)
   })
   
   output$distPlot <- renderPlot({
