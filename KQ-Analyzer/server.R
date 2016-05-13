@@ -12,6 +12,7 @@ library(jsonlite)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
+  source("config.R")
   domain <- "https://apps.zetaphase.io/kq/admin/api.php?apikey="
   url <- paste(domain, api_key, sep="")
   document <- fromJSON(txt=url)

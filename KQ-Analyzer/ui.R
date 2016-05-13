@@ -32,7 +32,7 @@ shinyUI(
                                 choices = list("Choice 1" = 1, "Choice 2" = 2)
                    )
                  ),
-                 mainPanel( plotOutput("distPlot") )
+                 mainPanel( plotOutput("idPlot") )
                )
              ),
              tabPanel("Component 2"),
