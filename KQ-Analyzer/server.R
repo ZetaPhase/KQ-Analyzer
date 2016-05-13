@@ -21,6 +21,9 @@ shinyServer(function(input, output) {
   output$idPlot <- renderPlot({
     # generate data table from id section in data
     idData <- table(data[["id"]])
+    
+    # plot barchart based on idData
+    barplot(idData)
   })
   
   output$distPlot <- renderPlot({
