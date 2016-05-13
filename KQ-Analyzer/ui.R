@@ -35,7 +35,8 @@ shinyUI(
                  mainPanel( plotOutput("idPlot") )
                )
              ),
-             tabPanel("Component 2"),
-             tabPanel("Component 3")
+             tabPanel("URL Data"),
+             tabPanel("Timestamp Data"),
+             tabPanel("b64extra Data")
   )
 )
