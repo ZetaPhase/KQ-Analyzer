@@ -28,6 +28,16 @@ shinyServer(function(input, output) {
     par(op)
   })
   
+  output$urlPlot <- renderPlot({
+    # generate data table from url section in data
+    urlData <- table(data[["url"]])
+    
+    # plot barchart based on urlData
+    op <- par(mar = c(10,4,4,2) + 0.1)
+    barplot(idData, las=2)
+    par(op)
+  })
+  
   output$distPlot <- renderPlot({
     
     # generate bins based on input$bins from ui.R

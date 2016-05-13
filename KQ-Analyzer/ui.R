@@ -35,7 +35,28 @@ shinyUI(
                  mainPanel( plotOutput("idPlot") )
                )
              ),
-             tabPanel("URL Data"),
+             tabPanel(
+               "URL Data",
+               sidebarLayout(
+                 sidebarPanel(
+                   textInput(
+                     inputId = "url",
+                     label = NULL,
+                     value = "",
+                     width = "400px",
+                     placeholder = "Insert a URL to Track"
+                   ),
+                   selectizeInput(
+                     'id', label="Year", choices=NULL, multiple=F, selected="X2015",
+                     options = list(create = TRUE,placeholder = 'Choose the year')
+                   ),
+                   # Make a list of checkboxes
+                   radioButtons("radio", label = h3("Radio buttons"),
+                                choices = list("Choice 1" = 1, "Choice 2" = 2)
+                   )
+                 ),
+                 mainPanel( plotOutput("urlPlot") )
+             ),
              tabPanel("Timestamp Data"),
              tabPanel("b64extra Data")
   )
