@@ -18,6 +18,7 @@ shinyUI(
                  sidebarPanel(
                    textInput(
                      inputId = "url",
+                     label = NULL,
                      value = "",
                      width = "400px",
                      placeholder = "Insert a URL to Track"
