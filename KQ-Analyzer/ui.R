@@ -16,10 +16,24 @@ shinyUI(
                "Home",
                sidebarLayout(
                  sidebarPanel(
-                   h3(htmlOutput("home"))
+                   textInput(
+                     inputId = "url",
+                     label = NULL,
+                     value = "",
+                     width = "400px",
+                     placeholder = "Insert the webpage to track"
+                   ),
+                   textInput(
+                     inputId = "apiKey",
+                     label = NULL,
+                     value = "",
+                     width = "400px",
+                     placeholder = "Insert your api key"
+                   )
                  ),
                  mainPanel(
-                   
+                   h3(textOutput("title")),
+                   htmlOutput("home")
                  )
                )
              ),

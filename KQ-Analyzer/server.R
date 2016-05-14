@@ -22,9 +22,13 @@ shinyServer(function(input, output) {
   document <- fromJSON(txt=url)
   data <- document[["rawData"]]
   
+  output$title <- renderText({
+    "Welcome to KQ Analyzer"
+  })
+  
   output$home <- renderUI({
-    str1 <- paste("Welcome to KQ-Analyzer")
-    str2 <- paste("This is some test code")
+    str1 <- paste("This visual analyzer was built by Dave Ho and Nihal Talur from ZetaPhase Technologies.")
+    str2 <- paste("Track your server and get constant analytics of your webpage")
     HTML(paste(str1, str2, sep = '<br/>'))
     
   })
