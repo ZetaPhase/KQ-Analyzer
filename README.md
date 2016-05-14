@@ -1,7 +1,7 @@
 # KQ-Analyzer
 Visual analyzer for KQ Analytics.
 
-Retrieves data from the JSON API provided by our [KQ Analytics project](https://github.com/ZetaPhase/KQAnalytics) and creates a visual representation of data in a user-friendly, cross-platform desktop application.
+Retrieves data from the JSON API provided by our [KQ Analytics project](https://github.com/ZetaPhase/KQAnalytics) and creates a visual representation of data in a user-friendly, cross-platform desktop application. KQ Analyzer also uses the data to intelligently create a prediction of future statistics using machine learning (classifaction/clustering)
 
 The analyzer uses R to plot and analyze data and uses Shiny to create the desktop application.
 
