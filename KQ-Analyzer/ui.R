@@ -13,6 +13,17 @@ library(shiny)
 shinyUI(
   navbarPage("KQ Analyzer",
              tabPanel(
+               "Home",
+               sidebarLayout(
+                 sidebarPanel(
+                   textOutput("Welcome to KQ-Analyzer")
+                 ),
+                 mainPanel(
+                   h3(textOutput("Welcome to KQ-Analyzer"))
+                 )
+               )
+             ),
+             tabPanel(
                "ID Data",
                sidebarLayout(
                  sidebarPanel(
@@ -51,6 +62,9 @@ shinyUI(
                )
              ),
              tabPanel("Timestamp Data"),
-             tabPanel("b64extra Data")
+             tabPanel(
+               "b64extra Data",
+               tags$textarea(id="b64", rows=3, cols=40, "Default value")
+             )
   )
 )
