@@ -17,6 +17,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 - Curl
 - Shiny
 - jsonlite
+- b64enc
 
 Please visit the setup.txt file for more reference.
 
