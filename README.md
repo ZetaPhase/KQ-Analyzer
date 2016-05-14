@@ -26,6 +26,8 @@ Please visit the setup.txt file for more reference.
 #### Sample
 This is a sample of our [analyzer](https://xeliot.shinyapps.io/KQ-Analyzer/) of our website [Zetaphase](https://zetaphase.io).
 
+Visit [here](https://blog.zetaphase.io/) for a tutorial on shiny and KQ Analyzer.
+
 (c) 2016, Zetaphase Technologies Inc, All Rights Reserved.
 Licensed under the GPLv3
 
