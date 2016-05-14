@@ -19,6 +19,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 - jsonlite
 - b64enc
 - RCurl
+- DiagrammeR
 
 Please visit the setup.txt file for more reference.
 
