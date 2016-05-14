@@ -32,7 +32,7 @@ shinyUI(
                    )
                  ),
                  mainPanel(
-                   h3(textOutput("title")),
+                   h3(tags$p("Welcome to KQ Analyzer")),
                    htmlOutput("home"),
                    h3(tags$p("Links")),
                    tags$a(href="https://github.com/ZetaPhase/KQAnalytics/blob/master/README.md#quick-start", "Instructions to KQ Analytics"),

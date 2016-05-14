@@ -21,11 +21,7 @@ shinyServer(function(input, output) {
   url <- paste(domain, api_key, sep="")
   document <- fromJSON(txt=url)
   data <- document[["rawData"]]
-  
-  output$title <- renderText({
-    "Welcome to KQ Analyzer"
-  })
-  
+
   output$home <- renderUI({
     str1 <- paste("This visual analyzer was built by Dave Ho and Nihal Talur from ZetaPhase Technologies.")
     str2 <- paste("Track your server and get detailed analytics of visitors to your service")
