@@ -9,6 +9,9 @@
 
 library(shiny)
 library(jsonlite)
+library(base64enc)
+library(RCurl)
+library(DiagrammeR)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -24,7 +27,7 @@ shinyServer(function(input, output) {
     
     # plot barchart based on idData
     op <- par(mar = c(10,4,4,2) + 0.1)
-    barplot(idData, las=2)
+    barplot(idData, las=2, ylab = "Frequency", main = "Visit Count")
     par(op)
   })
   
