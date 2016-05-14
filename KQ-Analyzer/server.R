@@ -22,6 +22,13 @@ shinyServer(function(input, output) {
   document <- fromJSON(txt=url)
   data <- document[["rawData"]]
   
+  textareaInput <- function(inputID, label, value="", rows=10, columns=80) {
+    HTML(paste0('<div class="form-group shiny-input-container">
+                <label for="', inputID, '">', label,'</label>
+                <textarea id="', inputID, '" rows="', rows,'" cols="', 
+                columns,'">', value, '</textarea></div>'))
+  }
+  
   output$idPlot <- renderPlot({
     # generate data table from id section in data
     idData <- table(data[["id"]])
