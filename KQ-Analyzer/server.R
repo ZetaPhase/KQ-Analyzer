@@ -12,6 +12,7 @@ library(jsonlite)
 library(base64enc)
 library(RCurl)
 library(DiagrammeR)
+library(curl)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
