@@ -34,6 +34,8 @@ shinyUI(
                  mainPanel(
                    h3(textOutput("title")),
                    htmlOutput("home"),
+                   tags$a(href="https://github.com/ZetaPhase/KQAnalytics/blob/master/README.md#quick-start", "Instructioins to KQ Analytics"),
+                   tags$br(),
                    tags$a(href="https://zetaphase.io/", "Visit our webpage"),
                    tags$br(),
                    tags$a(href="https://github.com/ZetaPhase", "Visit our Github page")
