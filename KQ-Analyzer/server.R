@@ -22,6 +22,13 @@ shinyServer(function(input, output) {
   document <- fromJSON(txt=url)
   data <- document[["rawData"]]
   
+  output$home <- renderUI({
+    str1 <- paste("Welcome to KQ-Analyzer")
+    str2 <- paste("This is some test code")
+    HTML(paste(str1, str2, sep = '<br/>'))
+    
+  })
+  
   textareaInput <- function(inputID, label, value="", rows=10, columns=80) {
     HTML(paste0('<div class="form-group shiny-input-container">
                 <label for="', inputID, '">', label,'</label>

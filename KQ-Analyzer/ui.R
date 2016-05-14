@@ -16,10 +16,10 @@ shinyUI(
                "Home",
                sidebarLayout(
                  sidebarPanel(
-                   textOutput("Welcome to KQ-Analyzer")
+                   h3(htmlOutput("home"))
                  ),
                  mainPanel(
-                   h3(textOutput("Welcome to KQ-Analyzer"))
+                   
                  )
                )
              ),
