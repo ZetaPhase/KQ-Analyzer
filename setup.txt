@@ -13,6 +13,8 @@ http://shiny.rstudio.com/
 
 1. After downloading both R and R Studio, launch R Studio.
 2. Click on the Packages tab on the lower right tile
-3. Download the Shiny package
-4. Download the Curl package
-5. You're all set
+3. Download the Shiny package (Package to create the web app platform)
+4. Download the Curl package (This is a dependency of the shiny web app platform)
+5. Download the Base64Enc package and the RCurl package (These will be used to decode b64 extra data.)
+6. Download the DiagrammeR package. (This is used to plot timeline Gantt charts for the timestamps in R)
+7. You're all set
