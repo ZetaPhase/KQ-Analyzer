@@ -21,14 +21,14 @@ shinyUI(
                      label = NULL,
                      value = "",
                      width = "400px",
-                     placeholder = "Insert the webpage to track"
+                     placeholder = "Please enter the KQ Analytics installation root URL"
                    ),
                    textInput(
                      inputId = "apiKey",
                      label = NULL,
                      value = "",
                      width = "400px",
-                     placeholder = "Insert your api key"
+                     placeholder = "Please enter your API key for KQ Analytics"
                    )
                  ),
                  mainPanel(
@@ -46,7 +46,7 @@ shinyUI(
                      label = NULL,
                      value = "",
                      width = "400px",
-                     placeholder = "Insert a URL to Track"
+                     placeholder = "Please enter the KQ Analytics installation root UR"
                    ),
                    selectizeInput(
                      'id', label="Year", choices=NULL, multiple=F, selected="X2015",
@@ -69,7 +69,7 @@ shinyUI(
                      label = NULL,
                      value = "",
                      width = "400px",
-                     placeholder = "Insert a URL to Track"
+                     placeholder = "Please enter the KQ Analytics installation root UR"
                    )
                  ),
                  mainPanel( plotOutput("urlPlot") )
