@@ -33,7 +33,10 @@ shinyUI(
                  ),
                  mainPanel(
                    h3(textOutput("title")),
-                   htmlOutput("home")
+                   htmlOutput("home"),
+                   tags$a(href="https://zetaphase.io/", "Visit our webpage"),
+                   tags$br(),
+                   tags$a(href="https://github.com/ZetaPhase", "Visit our Github page")
                  )
                )
              ),
