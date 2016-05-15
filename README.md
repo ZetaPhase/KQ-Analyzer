@@ -7,11 +7,11 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 ### Quick Start For Developers
 
-### [KQ Analytics](https://github.com/ZetaPhase/KQAnalytics) is required for this visual implementation to function for your website. Please visit that repository if you have not already done so.
+### A valid installation of [KQ Analytics](https://github.com/ZetaPhase/KQAnalytics) (OSS software) is required to use KQ Analyzer, which works by accessing KQ Analytics' JSON API.
 
 #### Initial download: 
 - R
-- R Studio(Optional)
+- R Studio (Optional, but very helpful for editing)
 
 #### Required Libraries:
 - Curl
