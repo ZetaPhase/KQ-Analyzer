@@ -44,7 +44,11 @@ shinyServer(function(input, output) {
     par(op)
   })
   
-  
+  output$idPieChart <- renderPlot({
+    #plot piechart based on idData
+    tmp = table(goClicked()[["id"]])
+    pie(tmp, labels=names(tmp), main="Pie Chart of ID Data")
+  })
   
   output$urlBarPlot <- renderPlot({
 

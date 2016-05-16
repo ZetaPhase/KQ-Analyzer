@@ -56,7 +56,8 @@ shinyUI(
                      placeholder = "Please enter the KQ Analytics installation root UR"
                    )
                  ),
-                 mainPanel( plotOutput("idPlot") )
+                 mainPanel( plotOutput("idBarPlot"),
+                            plotOutput("idPieChart"))
                )
              ),
              tabPanel(
@@ -71,7 +72,7 @@ shinyUI(
                      placeholder = "Please enter the KQ Analytics installation root UR"
                    )
                  ),
-                 mainPanel( plotOutput("urlPlot") )
+                 mainPanel( plotOutput("urlBarPlot") )
                )
              ),
              tabPanel("Timestamp Data"),
