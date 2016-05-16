@@ -23,7 +23,7 @@ shinyServer(function(input, output) {
   data <- document[["rawData"]]
 
   goClicked <- eventReactive(input$go, {
-    fromJSON(txt=paste(input$url, input$apiKey, sep=""))[["rawData"]]
+    fromJSON(txt=paste(input$url, "/admin/api.php?apikey=", input$apiKey, sep=""))[["rawData"]]
   })
   
   output$home <- renderUI({
