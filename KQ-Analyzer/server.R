@@ -58,6 +58,12 @@ shinyServer(function(input, output) {
     par(op)
   })
   
+  output$urlPieChart <- renderPlot({
+    #plot piechart based on idData
+    tmp = table(goClicked()[["url"]])
+    pie(tmp, labels=names(tmp), main="Pie Chart of ID Data")
+  })
+  
   output$distPlot <- renderPlot({
     
     # generate bins based on input$bins from ui.R

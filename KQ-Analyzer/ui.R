@@ -44,20 +44,37 @@ shinyUI(
                  )
                )
              ),
-             tabPanel(
+             navbarMenu(
                "ID Data",
-               sidebarLayout(
-                 sidebarPanel(
-                   textInput(
-                     inputId = "url",
-                     label = NULL,
-                     value = "",
-                     width = "400px",
-                     placeholder = "Please enter the KQ Analytics installation root UR"
-                   )
-                 ),
-                 mainPanel( plotOutput("idBarPlot"),
-                            plotOutput("idPieChart"))
+               tabPanel(
+                 "Bar Plot",
+                 sidebarLayout(
+                   sidebarPanel(
+                     textInput(
+                       inputId = "url",
+                       label = NULL,
+                       value = "",
+                       width = "400px",
+                       placeholder = "Please enter the KQ Analytics installation root UR"
+                     )
+                   ),
+                   mainPanel( plotOutput("idBarPlot"))
+                 )
+               ),
+               tabPanel(
+                 "Pie Chart",
+                 sidebarLayout(
+                   sidebarPanel(
+                     textInput(
+                       inputId = "url",
+                       label = NULL,
+                       value = "",
+                       width = "400px",
+                       placeholder = "Please enter the KQ Analytics installation root UR"
+                     )
+                   ),
+                   mainPanel( plotOutput("idPieChart"))
+                 )
                )
              ),
              tabPanel(
@@ -72,7 +89,8 @@ shinyUI(
                      placeholder = "Please enter the KQ Analytics installation root UR"
                    )
                  ),
-                 mainPanel( plotOutput("urlBarPlot") )
+                 mainPanel( plotOutput("urlBarPlot"),
+                            plotOutput("urlPieChart"))
                )
              ),
              tabPanel("Timestamp Data"),
