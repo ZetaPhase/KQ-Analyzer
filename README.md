@@ -24,7 +24,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 Please visit the setup.txt file for more reference.
 
 #### Sample
-This is a sample of our [analyzer](https://xeliot.shinyapps.io/KQ-Analyzer/) of our website [Zetaphase](https://zetaphase.io).
+This is the web version of our [analyzer](https://apps.zetaphase.io/kq-analyzer/) of our website [Zetaphase](https://zetaphase.io).
 Visit [here](https://blog.zetaphase.io/) for a tutorial on shiny and KQ Analyzer.
 
 (c) 2016, Zetaphase Technologies Inc, All Rights Reserved.
