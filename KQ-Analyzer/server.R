@@ -57,7 +57,7 @@ shinyServer(function(input, output) {
     
     # plot barchart based on urlData
     op <- par(mar = c(10,4,4,2) + 0.1)
-    barplot(urlData, las=2)
+    barplot(table(goClicked()[["url"]]), las=2, ylab="Frequency", main = "Link Count")
     par(op)
   })
   
