@@ -29,7 +29,8 @@ shinyUI(
                      value = "",
                      width = "400px",
                      placeholder = "Please enter your API key for KQ Analytics"
-                   )
+                   ),
+                   actionButton("go", "Go")
                  ),
                  mainPanel(
                    h3(tags$p("Welcome to KQ Analyzer")),

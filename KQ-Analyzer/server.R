@@ -22,6 +22,10 @@ shinyServer(function(input, output) {
   document <- fromJSON(txt=url)
   data <- document[["rawData"]]
 
+  goClicked <- eventReactive(input$go, {
+    fromJSON(txt=paste(input$url, input$apiKey, sep=""))[["rawData"]]
+  })
+  
   output$home <- renderUI({
     str1 <- paste("This visual analyzer was built by Dave Ho and Nihal Talur from ZetaPhase Technologies.")
     str2 <- paste("Track your server and get detailed analytics of visitors to your service")
@@ -43,7 +47,7 @@ shinyServer(function(input, output) {
     
     # plot barchart based on idData
     op <- par(mar = c(10,4,4,2) + 0.1)
-    barplot(idData, las=2, ylab = "Frequency", main = "Visit Count")
+    barplot(table(goClicked()[["id"]]), las=2, ylab = "Frequency", main = "Visit Count")
     par(op)
   })
   
