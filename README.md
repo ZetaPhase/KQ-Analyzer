@@ -31,4 +31,4 @@ Visit [here](https://blog.zetaphase.io/) for a tutorial on shiny and KQ Analyzer
 Licensed under the GPLv3
 
 
-- Created by Dave Ho and Nihal Talur
+- Created by xeliot and 0xFireball
