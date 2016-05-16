@@ -16,11 +16,6 @@ library(curl)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  source("config.R")
-  domain <- "https://apps.zetaphase.io/kq/admin/api.php?apikey="
-  url <- paste(domain, api_key, sep="")
-  document <- fromJSON(txt=url)
-  data <- document[["rawData"]]
 
   goClicked <- eventReactive(input$go, {
     fromJSON(txt=paste(input$url, "/admin/api.php?apikey=", input$apiKey, sep=""))[["rawData"]]
@@ -42,8 +37,6 @@ shinyServer(function(input, output) {
   }
   
   output$idPlot <- renderPlot({
-    # generate data table from id section in data
-    idData <- table(data[["id"]])
     
     # plot barchart based on idData
     op <- par(mar = c(10,4,4,2) + 0.1)
@@ -52,9 +45,7 @@ shinyServer(function(input, output) {
   })
   
   output$urlPlot <- renderPlot({
-    # generate data table from url section in data
-    urlData <- table(data[["url"]])
-    
+
     # plot barchart based on urlData
     op <- par(mar = c(10,4,4,2) + 0.1)
     barplot(table(goClicked()[["url"]]), las=2, ylab="Frequency", main = "Link Count")
