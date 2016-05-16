@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
   })
   
   output$home <- renderUI({
-    str1 <- paste("This visual analyzer was built by Dave Ho and Nihal Talur from ZetaPhase Technologies.")
+    str1 <- paste("This visual analyzer was built by xeliot and 0xFireball from ZetaPhase Technologies.")
     str2 <- paste("Track your server and get detailed analytics of visitors to your service")
     str3 <- paste("This analyzer requires a functional KQ Analytics installation. You can get instructions in the links below.")
     HTML(paste(str1, str2, str3, sep = '<br/>'))
