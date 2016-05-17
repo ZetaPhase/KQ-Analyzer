@@ -2,8 +2,8 @@ name: KQ-Analyzer
 account: xeliot
 server: shinyapps.io
 appId: 102035
-bundleId: 452560
+bundleId: 452630
 url: https://xeliot.shinyapps.io/KQ-Analyzer/
-when: 1463361906.10166
+when: 1463370591.13207
 asMultiple: FALSE
 asStatic: FALSE

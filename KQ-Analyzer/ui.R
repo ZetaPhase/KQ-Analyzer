@@ -77,22 +77,40 @@ shinyUI(
                  )
                )
              ),
-             tabPanel(
+             navbarMenu(
                "URL Data",
-               sidebarLayout(
-                 sidebarPanel(
-                   textInput(
-                     inputId = "url",
-                     label = NULL,
-                     value = "",
-                     width = "400px",
-                     placeholder = "Please enter the KQ Analytics installation root UR"
-                   )
-                 ),
-                 mainPanel( plotOutput("urlBarPlot"),
-                            plotOutput("urlPieChart"))
+               tabPanel(
+                 "Bar Plot",
+                 sidebarLayout(
+                   sidebarPanel(
+                     textInput(
+                       inputId = "url",
+                       label = NULL,
+                       value = "",
+                       width = "400px",
+                       placeholder = "Please enter the KQ Analytics installation root UR"
+                     )
+                   ),
+                   mainPanel( plotOutput("urlBarPlot"))
+                 )
+               ),
+               tabPanel(
+                 "Pie Chart",
+                 sidebarLayout(
+                   sidebarPanel(
+                     textInput(
+                       inputId = "url",
+                       label = NULL,
+                       value = "",
+                       width = "400px",
+                       placeholder = "Please enter the KQ Analytics installation root UR"
+                     )
+                   ),
+                   mainPanel( plotOutput("urlPieChart"))
+                 )
                )
              ),
+             tabPanel("Tracking ID"),
              tabPanel("Timestamp Data"),
              tabPanel(
                "b64extra Data",
