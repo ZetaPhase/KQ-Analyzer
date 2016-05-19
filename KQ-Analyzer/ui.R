@@ -110,7 +110,13 @@ shinyUI(
                  )
                )
              ),
-             tabPanel("Tracking ID"),
+             tabPanel(
+               "Tracking ID",
+               mainPanel(
+                 h3(tags$p("Unique Tracking IDs")),
+                 htmlOutput(trackingid)
+               )
+             ),
              tabPanel("Timestamp Data"),
              tabPanel(
                "b64extra Data",
