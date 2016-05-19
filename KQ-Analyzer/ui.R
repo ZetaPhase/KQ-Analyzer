@@ -31,7 +31,8 @@ shinyUI(
                      placeholder = "Please enter your API key for KQ Analytics"
                    ),
                    actionButton("go", "Go"),
-                   img(src = "img//kq-analyzer.png", height = 256, width = 256)
+                   tags$br(),
+                   tags$img(src="https://zetaphase.io/img/kq-analyzer.png", width="256", height="256")
                  ),
                  mainPanel(
                    h3(tags$p("Welcome to KQ Analyzer")),
