@@ -114,7 +114,7 @@ shinyUI(
                "Tracking ID",
                mainPanel(
                  h3(tags$p("Unique Tracking IDs")),
-                 htmlOutput(trackingid)
+                 htmlOutput("trackingid")
                )
              ),
              tabPanel("Timestamp Data"),
