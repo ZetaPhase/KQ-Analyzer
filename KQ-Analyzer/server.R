@@ -29,6 +29,14 @@ shinyServer(function(input, output) {
     
   })
   
+  output$trackingid <- renderUI({
+    str1 <- ""
+    for(id in unique(goClicked()[["trackingid"]])){
+      str1 <- paste(str1, id, sep="<br/>")
+    }
+    HTML(str1)
+  })
+  
   textareaInput <- function(inputID, label, value="", rows=10, columns=80) {
     HTML(paste0('<div class="form-group shiny-input-container">
                 <label for="', inputID, '">', label,'</label>
@@ -49,7 +57,7 @@ shinyServer(function(input, output) {
     tmp = table(goClicked()[["id"]])
     pie(tmp, labels=names(tmp), main="Pie Chart of ID Data")
   })
-  
+    
   output$urlBarPlot <- renderPlot({
 
     # plot barchart based on urlData
