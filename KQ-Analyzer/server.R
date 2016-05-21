@@ -15,40 +15,26 @@ library(DiagrammeR)
 library(curl)
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output, session) {
-  
+shinyServer(function(input, output) {
+
   goClicked <- eventReactive(input$go, {
     fromJSON(txt=paste(input$url, "/admin/api.php?apikey=", input$apiKey, sep=""))[["rawData"]]
   })
-  
-  init <- function(){
-    print(session$clientData$url_search)
-    print(parseQueryString(session$clientData$url_search)[["siteBaseUrl"]])
-    print(typeof(parseQueryString(session$clientData$url_search)[["siteBaseUrl"]]))
-    fromJSON(txt=paste(toString(parseQueryString(session$clientData$url_search)[["siteBaseUrl"]]), "/admin/api.php?apikey=", toString(parseQueryString(session$clientData$url_search)[["apikey"]]), sep=""))[["rawData"]]
-  }
   
   output$home <- renderUI({
     str1 <- paste("This visual analyzer was built by xeliot and 0xFireball from ZetaPhase Technologies.")
     str2 <- paste("Track your server and get detailed analytics of visitors to your service")
     str3 <- paste("This analyzer requires a functional KQ Analytics installation. You can get instructions in the links below.")
-    HTML(paste(str1, str2, str3, init(), sep = '<br/>'))
+    HTML(paste(str1, str2, str3, sep = '<br/>'))
     
   })
   
   output$trackingid <- renderUI({
-    if (session$clientData$url_search != ""){
-      for (id in unique(init()[["trackingid"]])){
-        str1 <- paste(str1, id, sep="<br/>")
-      } 
-      HTML(str1)
-    }else{
-      str1 <- ""
-      for(id in unique(goClicked()[["trackingid"]])){
-        str1 <- paste(str1, id, sep="<br/>")
-      }
-      HTML(str1)
+    str1 <- ""
+    for(id in unique(goClicked()[["trackingid"]])){
+      str1 <- paste(str1, id, sep="<br/>")
     }
+    HTML(str1)
   })
   
   textareaInput <- function(inputID, label, value="", rows=10, columns=80) {
