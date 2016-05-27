@@ -8,11 +8,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 ### Features
 - ID Data
--   Bar Chart
--   Pie Chart
 - URL Data
--   Bar Chart
--   Pie Chart
 - Tracking ID
 - Timestamp Data
 - b64extraData (user-agent etc.)
