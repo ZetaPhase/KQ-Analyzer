@@ -5,6 +5,20 @@ Retrieves data from the JSON API provided by our [KQ Analytics project](https://
 
 The analyzer uses R to plot and analyze data and uses Shiny to create the desktop application.
 
+
+### Features
+- ID Data
+-   Bar Chart
+-   Pie Chart
+- URL Data
+-   Bar Chart
+-   Pie Chart
+- Tracking ID
+- Timestamp Data
+- b64extraData (user-agent etc.)
+- machine learning implemented
+- URL Authentication
+
 ### Quick Start For Developers
 
 ### A valid installation of [KQ Analytics](https://github.com/ZetaPhase/KQAnalytics) (OSS software) is required to use KQ Analyzer, which works by accessing KQ Analytics' JSON API.
