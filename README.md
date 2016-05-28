@@ -41,4 +41,4 @@ A fully functional installation of KQ Analyzer, available to the public, can be 
 
 Licensed under the GPLv3.
 
-Created by [xeliot](https://github.com/xeliot) and 0xFireball(https://github.com/0xFireball). This project goes hand-in-hand with one of our other projects, KQ Analytics.
+Created by [xeliot](https://github.com/xeliot) and [0xFireball](https://github.com/0xFireball). This project goes hand-in-hand with one of our other projects, KQ Analytics.
