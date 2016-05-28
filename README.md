@@ -7,13 +7,14 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 
 ### Features
-- ID Data
-- URL Data
-- Tracking ID
-- Timestamp Data
-- b64extraData (user-agent etc.)
-- machine learning implemented
-- URL Authentication
+- Analysis of
+  - ID Data
+  - URL Data
+  - Tracking ID
+  - Timestamp Data
+  - Miscellaneous Data (user-agent etc.)
+- Machine-learning-based predictions
+- URL Authentication (Automate logging in and fetching analyzed data)
 
 ### Quick Start For Developers
 
