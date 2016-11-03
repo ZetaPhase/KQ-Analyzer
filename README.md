@@ -10,7 +10,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 ### Features
 - Analysis of
-  - ID Data
+  - ID Data.
   - URL Data
   - Tracking ID
   - Timestamp Data
