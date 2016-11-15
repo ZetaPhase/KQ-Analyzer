@@ -24,7 +24,7 @@ The analyzer uses R to plot and analyze data and uses Shiny to create the deskto
 
 #### Initial download: 
 - R
-- R Studio (Optional, but very helpful for editing)
+- R Studio (Optional, but very helpful for editing).
 
 #### Required Libraries:
 - Curl
