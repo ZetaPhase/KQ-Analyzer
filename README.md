@@ -1,11 +1,11 @@
 # KQ-Analyzer
 ![Logo](/KQ-Analyzer/img/kq-analyzer.png)
 
-Visual analyzer for KQ Analytics.
+Visual analyzer for KQ Analytics. Uses charts and plots to help user better analyze statistics on the KQ Project.
 
 Retrieves data from the JSON API provided by our [KQ Analytics project](https://github.com/ZetaPhase/KQAnalytics) and creates a visual representation of data in a user-friendly, cross-platform desktop application. KQ Analyzer also uses the data to intelligently create a prediction of future statistics using machine learning (classifaction/clustering)
 
-The analyzer uses R to plot and analyze data and uses Shiny to create the desktop application.
+The analyzer uses R to plot and analyze data and uses R Shiny to create the desktop application.
 
 
 ### Features
